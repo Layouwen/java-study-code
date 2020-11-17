@@ -1,6 +1,5 @@
 package 统计字符串中每个字符出现的次数;
 
-import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
