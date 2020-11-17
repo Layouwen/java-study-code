@@ -12,7 +12,7 @@ public class Start {
     // 定义花色
     String[] colors = {"方块", "梅花", "红心", "黑桃"};
     // 定义点数
-    String[] numbers = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "J", "Q", "K", "A"};
+    String[] numbers = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
     for (String color : colors) {
       for (String number : numbers) {
         array.add(color + number);
