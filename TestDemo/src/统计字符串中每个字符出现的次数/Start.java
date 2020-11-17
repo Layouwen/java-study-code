@@ -3,6 +3,7 @@ package 统计字符串中每个字符出现的次数;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class Start {
   public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Start {
     String line = sc.nextLine();
 
     // 创建HashMap
-    HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+    TreeMap<Character, Integer> hm = new TreeMap<Character, Integer>();
 
     for (int i = 0; i < line.length(); i++) {
       // 获得该字符串的字符
