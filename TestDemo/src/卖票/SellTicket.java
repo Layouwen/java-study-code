@@ -1,12 +1,17 @@
 package 卖票;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class SellTicket implements Runnable {
   private int tickets = 100;
   private Object obj = new Object();
+  private Lock lock = new ReentrantLock();
 
   @Override
   public void run() {
     while (true) {
+      lock.lock();
       if (tickets > 0) {
         synchronized (obj) {
           try {
@@ -18,6 +23,7 @@ public class SellTicket implements Runnable {
           tickets--;
         }
       }
+      lock.unlock();
     }
   }
 }
