@@ -15,9 +15,9 @@ public class ServerDemo {
 
     String line;
     while ((line = br.readLine()) != null) {
-      if ("886".equals(line)) {
-        break;
-      }
+//      if ("886".equals(line)) {
+//        break;
+//      }
       bw.write(line);
       bw.newLine();
       bw.flush();

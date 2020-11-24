@@ -22,9 +22,11 @@ public class ClientDemo {
       bw.flush();
     }
 
-    bw.write("886");
-    bw.newLine();
-    bw.flush();
+    // 自定义标记
+//    bw.write("886");
+//    bw.newLine();
+//    bw.flush();
+    s.shutdownOutput();
 
 
     BufferedReader brClient = new BufferedReader(new InputStreamReader(s.getInputStream()));
